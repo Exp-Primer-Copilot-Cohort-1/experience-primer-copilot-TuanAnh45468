@@ -1,11 +1,8 @@
-const http = require('http');
-
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello, world!');
-});
-
-server.listen(3000, 'localhost', () => {
-    console.log('Server running at http://localhost:3000/');
-});
+// create web server
+var http = require('http');
+var fs = require('fs');
+var url = require('url');
+var qs = require('querystring');
+var template = require('./lib/template.js');
+var path = require('path');
+var sanitizeHtml = require('sanitize-html');

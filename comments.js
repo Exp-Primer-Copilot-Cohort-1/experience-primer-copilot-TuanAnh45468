@@ -1,8 +1,3 @@
-// create web server
-var http = require('http');
-var fs = require('fs');
-var url = require('url');
-var qs = require('querystring');
-var template = require('./lib/template.js');
-var path = require('path');
-var sanitizeHtml = require('sanitize-html');
+// Create web server
+// Create a web server that listens on port 3000 and serves the comments.html file
+// when someone visits the root URL.
